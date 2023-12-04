@@ -1,12 +1,12 @@
 //global
 
 //local
-import AppRoutes from './components/AppRoutes'
+import AppRoutes from "./components/AppRoutes";
 
 const App = () => {
   return (
     <>
-      <AppRoutes/>
+      <AppRoutes />
     </>
   );
 };
