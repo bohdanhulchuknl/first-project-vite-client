@@ -1,12 +1,18 @@
 import { Outlet } from "react-router-dom";
+import { Suspense } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Loading from "../components/Loading";
 const Layout = () => {
   return (
     <div className="flex flex-col h-full">
-      <header className="bg-amber-200">Header</header>
-      <main className="grow container mx-auto bg-slate-400">
-        <Outlet />
+      <Header />
+      <main className="grow bg-slate-400">
+        <Suspense fallback={<Loading />}>
+          <Outlet />
+        </Suspense>
       </main>
-      <footer className="bg-amber-200">Footer</footer>
+      <Footer />
     </div>
   );
 };

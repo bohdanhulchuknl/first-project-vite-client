@@ -1,7 +1,7 @@
 
 const NotMatch = () => {
   return (
-    <div>NotMatch</div>
+    <section>NotMatch</section>
   )
 }
 
