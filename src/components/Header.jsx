@@ -1,8 +1,10 @@
-//
+//global
 import { Link } from "react-router-dom";
+//local
+import AuthUser from "./ui/AuthUser";
 
 const Header = () => {
-  return <header className="bg-amber-200">
+  return <header className="flex justify-between bg-amber-200">
     <h5>Header</h5>
 
     <nav>
@@ -15,6 +17,8 @@ const Header = () => {
         </li>
       </ul>
     </nav>
+
+    <AuthUser/>
 
   </header>;
 };
