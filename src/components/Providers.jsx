@@ -10,9 +10,7 @@ const Providers = ({ children }) => {
     <Provider store={store}>
       <BrowserRouter>
         {children}
-        <>
-          <Toaster />
-        </>
+        <Toaster />
       </BrowserRouter>
     </Provider>
   );

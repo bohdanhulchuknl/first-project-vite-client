@@ -1,5 +1,3 @@
-//global
-
 //local
 import AppRoutes from "./components/AppRoutes";
 

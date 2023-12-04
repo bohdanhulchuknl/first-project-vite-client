@@ -9,13 +9,13 @@ const AuthProtect = ({ children }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (!loginUserInfo.isLogin) {
+    if (!loginUserInfo.isUserLogin) {
       toast.error("PROTECTED")
       navigate("/")
     }
-  }, [loginUserInfo.isLogin, navigate]);
+  }, [loginUserInfo.isUserLogin, navigate]);
 
-  if (!loginUserInfo.isLogin) return <>PROTECTED</>;
+  if (!loginUserInfo.isUserLogin) return <>PROTECTED</>;
   
   return children;
 };
