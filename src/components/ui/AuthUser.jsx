@@ -20,7 +20,7 @@ const AuthUser = () => {
     <div>
       {loginUserInfo.isUserLogin ? (
         <div className="flex gap-1">
-          <div>{loginUserInfo.user}</div>
+          <div className="p-2 bg-white rounded-full">{loginUserInfo.user}</div>
           <button onClick={logoutHandler} >Logout</button>
         </div>
       ) : (

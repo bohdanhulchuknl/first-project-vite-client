@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import AuthUser from "./ui/AuthUser";
 
 const Header = () => {
-  return <header className="flex justify-between bg-amber-200">
+  return <header className="flex items-center justify-between p-2 bg-amber-200 min-h-[60px]">
     <h5>Header</h5>
 
     <nav>

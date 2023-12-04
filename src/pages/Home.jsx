@@ -2,7 +2,7 @@
 const Home = () => {
 
   return (
-    <section>Home</section>
+    <section className="container h-full mx-auto text-center bg-white">Home page</section>
   )
 }
 
